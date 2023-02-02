@@ -1,5 +1,5 @@
 import prompts from "https://esm.sh/prompts@2.4.2";
-import nfzf from "npm:node-fzf";
+import nfzf from "https://esm.sh/node-fzf@0.11.0";
 import { rgb24 } from "https://deno.land/std@0.175.0/fmt/colors.ts";
 import { FzfOptions } from "./types.ts";
 

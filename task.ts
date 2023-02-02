@@ -1,4 +1,4 @@
-import { xdgConfig } from "npm:xdg-basedir";
+import { xdgConfig } from "https://esm.sh/xdg-basedir@5.1.0";
 import { expandGlobSync } from "https://deno.land/std@0.175.0/fs/mod.ts";
 import { type WalkEntry } from "https://deno.land/std@0.175.0/fs/mod.ts";
 
