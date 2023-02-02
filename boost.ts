@@ -59,5 +59,5 @@ if (typeof path == "undefined") {
   console.log("🚨 An error has occurred");
   exit();
 } else {
-  await execDeno(path, "-A");
+  await execDeno(path);
 }
