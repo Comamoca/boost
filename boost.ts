@@ -4,7 +4,7 @@ import { execDeno, exit } from "./utils.ts";
 
 const get = new Command()
   .arguments("<string>")
-  .description("🚧[WIP] Get tasks on internet☁")
+  .description("🚧 [WIP] Get tasks on internet☁")
   .action(
     () => {
       console.log(
@@ -16,9 +16,9 @@ const get = new Command()
 
 const edit = new Command()
   .arguments(
-    "<string> [destination:string]",
+    "<string>",
   )
-  .description("🚧[WIP] Edit your tasks✏")
+  .description("🚧 [WIP] Edit your tasks✏")
   .action(() => {
     console.log(
       "I'm sorry. This command is currently under development...🚧",
@@ -27,8 +27,8 @@ const edit = new Command()
   });
 
 const add = new Command()
-  .arguments("<string> [destination:string]")
-  .description("🚧[WIP] Add your task⚡")
+  .arguments("<string>")
+  .description("🚧 [WIP] Add your task⚡")
   .action(() => {
     console.log(
       "I'm sorry. This command is currently under development...🚧",
@@ -38,7 +38,7 @@ const add = new Command()
 
 const run = new Command()
   .arguments("<string>")
-  .description("🚧[WIP] Add your task⚡")
+  .description("🚧 [WIP] Run remote task🌐")
   .action(() => {
     console.log("I'm sorry. This command is currently under development...🚧");
     exit();
@@ -56,7 +56,7 @@ new Command()
 
 const path = await selectScript();
 if (typeof path == "undefined") {
-  console.log("An error has occurred🚨");
+  console.log("🚨 An error has occurred");
   exit();
 } else {
   await execDeno(path, "-A");
