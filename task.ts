@@ -3,7 +3,7 @@ import { expandGlobSync } from "https://deno.land/std@0.175.0/fs/mod.ts";
 import { type WalkEntry } from "https://deno.land/std@0.175.0/fs/mod.ts";
 
 export const globalTask = xdgConfig + "/boost";
-export const localTask = "./boost";
+export const localTask = ".boost";
 
 export const globLocal: Array<Record<string, string>> = Object.entries(
   extractPathName(expandGlobSync("**/.boost/*.ts")),
