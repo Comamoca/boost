@@ -1,4 +1,3 @@
-import $ from "https://deno.land/x/dax@0.24.1/mod.ts";
 import { exec } from "https://deno.land/x/execute@v1.1.0/mod.ts";
 import { rgb24 } from "https://deno.land/std@0.173.0/fmt/colors.ts";
 
@@ -42,17 +41,15 @@ export async function execDeno(
     scriptOption = "";
   }
 
-  const cmd = `deno run ${denoOption} ${path} ${scriptOption}`;
-
   console.log(yellow("Script start✨"));
   console.log(
     rgb24(
-      `==> ${cmd}`,
+      `Run script ==> ${path}`,
       colorCodeToHex("#b8bb26"),
     ),
   );
 
-  await exec(cmd);
+  await import(path);
 
   console.log(yellow("Script done...Happy Hacking✨"));
 }
