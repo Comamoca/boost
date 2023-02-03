@@ -30,8 +30,6 @@ export function isEmptyString(str: string) {
 
 export async function execDeno(
   path: string,
-  denoOption?: string,
-  scriptOption?: string,
 ) {
   if (typeof denoOption != "string") {
     denoOption = "";
