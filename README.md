@@ -41,7 +41,10 @@ Boost your project fledgling🚀
 ## 🚀 How to use
 
 ```
-deno run --unstable -A https://raw.githubusercontent.com/Comamoca/boost/main/boost.ts
+boost
+
+# see help
+boost -h
 ```
 
 ## Add Task
@@ -58,7 +61,7 @@ Requires
 - deno
 
 ```
-deno run -A https://deno.land/x/boost_cli@0.1.0/install.ts
+deno run -A https://raw.githubusercontent.com/Comamoca/boost/main/install.ts
 ```
 
 ## ⛏️   Development

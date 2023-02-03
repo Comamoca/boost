@@ -41,7 +41,9 @@
 ## 🚀 使い方
 
 ```
-deno run --unstable -A https://raw.githubusercontent.com/Comamoca/boost/main/boost.ts
+boost
+# ヘルプ
+boost -h
 ```
 
 ## タスクの追加
@@ -58,7 +60,7 @@ TaskをBoostに登録したい場合は、`XDG_CONFIG`またはローカルの`.
 - deno
 
 ```
-deno run -A https://deno.land/x/boost_cli@0.1.0/install.ts
+deno run -A https://raw.githubusercontent.com/Comamoca/boost/main/install.ts
 ```
 ## ⛏️   開発
 
