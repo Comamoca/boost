@@ -59,5 +59,5 @@ if (typeof path == "undefined") {
   console.log("🚨 An error has occurred");
   exit();
 } else {
-  await import(path);
+  await execDeno(path);
 }

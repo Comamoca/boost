@@ -31,14 +31,6 @@ export function isEmptyString(str: string) {
 export async function execDeno(
   path: string,
 ) {
-  if (typeof denoOption != "string") {
-    denoOption = "";
-  }
-
-  if (typeof scriptOption != "string") {
-    scriptOption = "";
-  }
-
   console.log(yellow("Script start✨"));
   console.log(
     rgb24(
