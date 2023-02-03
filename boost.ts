@@ -59,5 +59,6 @@ if (typeof path == "undefined") {
   console.log("🚨 An error has occurred");
   exit();
 } else {
-  await execDeno(path);
+  const scriptPath = new URL(path).hostname;
+  await execDeno(scriptPath);
 }
