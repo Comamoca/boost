@@ -49,10 +49,16 @@ deno run --unstable -A https://raw.githubusercontent.com/Comamoca/boost/main/boo
 Boost Task は Deno スクリプトです。したがって、deno コードを作成する必要があります。
 TaskをBoostに登録したい場合は、`XDG_CONFIG`またはローカルの`.boost/`にコピーまたは保存します。
 
-## ⬇️  Install
+## ⬇️  インストール
+
+インストーラーが追加されました✨
+
+依存しているコマンド
+- git
+- deno
 
 ```
-deno install --unstable --allow-read --allow-write --allow-env --allow-run https://raw.githubusercontent.com/Comamoca/boost/main/boost.ts
+deno run -A https://deno.land/x/boost_cli@0.1.0/install.ts
 ```
 ## ⛏️   開発
 

@@ -51,8 +51,14 @@ If you want to register Task to Boost, you copy or save to `XDG_CONFIG` or local
 
 ## ⬇️  Install
 
+Added installer✨
+
+Requires
+- git
+- deno
+
 ```
-deno install --unstable --allow-read --allow-write --allow-env --allow-run https://raw.githubusercontent.com/Comamoca/boost/main/boost.ts
+deno run -A https://deno.land/x/boost_cli@0.1.0/install.ts
 ```
 
 ## ⛏️   Development
