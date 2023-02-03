@@ -1,4 +1,4 @@
-import nfzf from "npm:node-fzf";
+import nfzf from "https://esm.sh/node-fzf@0.11.0";
 import { globAll, globalTask } from "./task.ts";
 import { exit } from "./utils.ts";
 import { colorLog, toggle } from "./clikit.ts";
