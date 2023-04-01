@@ -38,9 +38,12 @@ const add = new Command()
 
 const net = new Command()
   .arguments("<string>")
-  .description("🚧 [WIP] Run remote task🌐")
-  .action(() => {
-    console.log("I'm sorry. This command is currently under development...🚧");
+  .description("Run remote task🌐")
+  .arguments("<url:string>")
+  .action(async (opts: Record<string, string>, url: string) => {
+    console.log(opts, url);
+    import.meta.url = Deno.cwd();
+    await execDeno(url);
     exit();
   });
 
@@ -51,7 +54,7 @@ new Command()
   .command("get", get)
   .command("edit ", edit)
   .command("add", add)
-  .command("run", net)
+  .command("net", net)
   .parse();
 
 const path = await selectScript();
