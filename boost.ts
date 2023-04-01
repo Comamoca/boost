@@ -1,6 +1,7 @@
 import { selectScript } from "./selector.ts";
 import { Command } from "https://deno.land/x/cliffy@v0.19.2/command/mod.ts";
 import { execDeno, exit } from "./utils.ts";
+import { addTask } from "./cmds/add.ts";
 
 const get = new Command()
   .arguments("<string>")
@@ -29,14 +30,13 @@ const edit = new Command()
 const add = new Command()
   .arguments("<string>")
   .description("🚧 [WIP] Add your task⚡")
-  .action(() => {
-    console.log(
-      "I'm sorry. This command is currently under development...🚧",
-    );
+  .action(async () => {
+    await addTask();
+    exit();
     exit();
   });
 
-const run = new Command()
+const net = new Command()
   .arguments("<string>")
   .description("🚧 [WIP] Run remote task🌐")
   .action(() => {
@@ -51,7 +51,7 @@ new Command()
   .command("get", get)
   .command("edit ", edit)
   .command("add", add)
-  .command("run", run)
+  .command("run", net)
   .parse();
 
 const path = await selectScript();
