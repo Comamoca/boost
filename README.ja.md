@@ -18,7 +18,6 @@
 
 </div>
 
-
 <table>
   <thead>
     <tr>
@@ -48,22 +47,24 @@ boost -h
 
 ## タスクの追加
 
-Boost Task は Deno スクリプトです。したがって、deno コードを作成する必要があります。
+Boost Task は Deno スクリプトです。したがって、deno
+コードを作成する必要があります。
 TaskをBoostに登録したい場合は、`XDG_CONFIG`またはローカルの`.boost/`にコピーまたは保存します。
 
-## ⬇️  インストール
+## ⬇️ インストール
 
 インストーラーが追加されました✨
 
 依存しているコマンド
+
 - git
 - deno
 
 ```
 deno run -A https://raw.githubusercontent.com/Comamoca/boost/main/install.ts
 ```
-## ⛏️   開発
 
+## ⛏️ 開発
 
 ```sh
 deno run -A boost.ts
@@ -75,7 +76,7 @@ deno test
 - [ ] getコマンドの実装
 - [ ] editコマンドの実装
 - [ ] addコマンドの実装
-- [ ] runコマンドの実装
+- [x] runコマンドの実装(完了しました！ただし名前は`net`です。)
 
 ## 📜 ライセンス
 
@@ -93,4 +94,3 @@ MIT
 ## 💕 スペシャルサンクス
 
 - [exec](https://deno.land/x/exec@0.0.5)
-

@@ -16,7 +16,6 @@ Boost your project fledgling🚀
 <br>
 <br>
 
-
 </div>
 
 <table>
@@ -49,14 +48,15 @@ boost -h
 
 ## Add Task
 
-Boost Task is Deno script. so, You must to wirte deno code.
-If you want to register Task to Boost, you copy or save to `XDG_CONFIG` or local `.boost/`.
+Boost Task is Deno script. so, You must to wirte deno code. If you want to
+register Task to Boost, you copy or save to `XDG_CONFIG` or local `.boost/`.
 
-## ⬇️  Install
+## ⬇️ Install
 
 Added installer✨
 
 Requires
+
 - git
 - deno
 
@@ -64,18 +64,19 @@ Requires
 deno run -A https://raw.githubusercontent.com/Comamoca/boost/main/install.ts
 ```
 
-## ⛏️   Development
+## ⛏️ Development
 
 ```sh
 deno run -A boost.ts
 deno test
 ```
+
 ## 📝 Todo
 
 - [ ] implementation get command
 - [ ] implementation edit command
 - [ ] implementation add command
-- [ ] implementation run command
+- [x] implementation run command(Done! But name is `net`)
 
 ## 📜 License
 
